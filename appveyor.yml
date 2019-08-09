@@ -86,7 +86,7 @@ for:
 # Deploy API reference
 deploy_script:
   - cd C:\projects\mlapi-a6wbv
-  - cp -r Libraries/Unity/* ./MLAPI/bin/Debug/*/
+  - cp Libraries/Unity/UnityEngine.dll ./MLAPI/bin/Debug/net35/
   - Libraries\Internal\ApiParser\ApiParser.exe ./MLAPI/bin/Debug/net35/MLAPI.dll ./MLAPI/bin/Debug/net35/MLAPI.xml ./docs/_data/api.yml ./docs/_api/
   - git add docs
   - git commit -m "docs(api): Updated API docs (Automated)"
