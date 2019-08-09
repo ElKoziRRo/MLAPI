@@ -69,8 +69,8 @@ for:
   - '%APPDATA%\npm'
   install:
   - npm install -g semantic-release
-  deploy_script:
-  - semantic-release
+  #deploy_script:
+  #- semantic-release
 -
   matrix:
     only:
